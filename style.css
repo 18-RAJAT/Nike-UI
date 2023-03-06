@@ -1,0 +1,113 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+.center{
+    width: 100%;
+    height:100%;
+}
+
+.image{
+    /* position: absolute;
+    top: 350px;
+    left: 130px; */
+    position: center;
+    margin-left: 310px;
+}
+.main{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 500px;
+    font-size: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    color:white;
+    width: 500px;
+    margin-top: 400px;
+    margin-left: 580px;
+    height: 300px;
+}
+.price{
+    border-right:2px solid red ;
+    height: 70%;
+    margin-top: 40px;
+    padding:0px 20px;
+}
+.upper{
+    display: flex;
+    justify-content: space-between;
+    font-size: 80px;
+    position: absolute;
+    top:0px;
+    left: 0;
+    color: white;
+    text-shadow: 0px 4px 5px rgb(20, 188, 239);
+}
+
+span{
+    color:rgb(239, 57, 20);
+}
+
+.vid {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  .vid video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(50%);
+  }
+  
+  .vid::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
+    
+    z-index: -1;
+    pointer-events: none; 
+  }
+ .circle{
+    /* background: rgb(178,237,87);
+    background: -moz-radial-gradient(circle, rgba(178,237,87,1) 0%, rgba(106,83,236,1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(178,237,87,1) 0%, rgba(106,83,236,1) 100%);
+    background: radial-gradient(circle, rgba(178,237,87,1) 0%, rgba(106,83,236,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#b2ed57",endColorstr="#6a53ec",GradientType=1); */
+    background-color: hsl(17, 95%, 48%, 0.46);
+    border-radius: 200px;
+    width: 380px;
+    height: 380px;
+    margin-top: -300px;
+    margin-left: 40px;
+ }
+ .image img{
+    filter: brightness(100%);
+    transition:transform ease-in 0.5s;
+ }
+ .image img:hover{
+    transform:scale(1.1);
+ }
+
+#idx
+{
+    margin-left: 80px;
+    margin-top: 330px;
+}
